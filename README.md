@@ -27,3 +27,4 @@ example of using FDS in nRF for test read/write in an application
 > So you build the bootloader with a constant that tells it how many pages of flash to avoid, working backwards from its own start addr.
 > That space gets subtracted from the space that it can use for staging firmware updates. This keeps your settings safe during DFU, but only if you want it to.
 > The end of the MBR is fixed. The end of the SD can be read at runtime (its hex file has an info struct). The start addr of the bootloader is set in one of two locations. From that info the fstorage module and bootloader can work things out.
+> The end of the SD is also given to the application so it's known to the linker.
