@@ -1,5 +1,5 @@
 # nrf-FDS
-example of using FDS in nRF for test read/write in an application
+example of using FDS in nRF5 SDK for test read/write in an application
 (from SDK17.1 for nRF52840)
 
 |FDS documentation|
