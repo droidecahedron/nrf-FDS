@@ -22,6 +22,7 @@ example of using FDS in nRF for test read/write in an application
 (from functionality section in infocenter... be mindful of which values are used for file IDs and record key values.)
 
 (Also, from the default, bump up number of pages reserved for FDS)
+> Should be three when the PM is used. That's two actual pages and one for garbage collection. If your app is going to use the FDS as well then you should bump it by at least a page (though you'll get away with not bumping if your usage is light).
 
 ### Extra Wisdom:
 - The bootloader doesn't use the FDS itself because that would balloon the size too much.
