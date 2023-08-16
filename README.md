@@ -22,7 +22,7 @@ example of using FDS in nRF5 SDK for test read/write in an application
 (from functionality section in infocenter... be mindful of which values are used for file IDs and record key values.)
 
 (Also, from the default, bump up number of pages reserved for FDS)
-> Should be three when the PM is used. That's two actual pages and one for garbage collection. If your app is going to use the FDS as well then you should bump it by at least a page (though you'll get away with not bumping if your usage is light).
+> Should be three when the PM is used. That's two actual pages and one for garbage collection. If your app is going to use the FDS as well then you should bump it by at least a page (though you'll get away with not bumping if your usage is light). To update a record the FDS writes a new record and then invalidates the old one. If there isn't space to write a new one then it deletes an old page to make space.
 
 ### Extra Wisdom:
 - The bootloader doesn't use the FDS itself because that would balloon the size too much.
