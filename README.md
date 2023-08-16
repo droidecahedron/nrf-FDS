@@ -22,9 +22,11 @@ example of using FDS in nRF for test read/write in an application
 
 (from functionality section in infocenter... be mindful of which values are used for file IDs and record key values.)
 
-> Extra Wisdom:
-> The bootloader doesn't use the FDS itself because that would balloon the size too much.
-> So you build the bootloader with a constant that tells it how many pages of flash to avoid, working backwards from its own start addr.
-> That space gets subtracted from the space that it can use for staging firmware updates. This keeps your settings safe during DFU, but only if you want it to.
-> The end of the MBR is fixed. The end of the SD can be read at runtime (its hex file has an info struct). The start addr of the bootloader is set in one of two locations. From that info the fstorage module and bootloader can work things out.
-> The end of the SD is also given to the application so it's known to the linker.
+### Extra Wisdom:
+- The bootloader doesn't use the FDS itself because that would balloon the size too much.
+  - So you build the bootloader with a constant that tells it how many pages of flash to avoid, working backwards from its own start addr.
+- That space gets subtracted from the space that it can use for staging firmware updates. This keeps your settings safe during DFU, but only if you want it to.
+- The end of the MBR (Master Boot Record)[^1] is fixed. The end of the SD can be read at runtime (its hex file has an info struct). The start addr of the bootloader is set in one of two locations. From that info the fstorage module and bootloader can work things out.
+- The end of the SD is also given to the application so it's known to the linker.
+
+[^1]: The main functionality of the MBR is to provide an interface to allow in-system updates of the application, the SoftDevice, and bootloader firmware.
