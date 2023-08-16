@@ -8,6 +8,10 @@ example of using FDS in nRF5 SDK for test read/write in an application
 |[FDS Functionality](https://infocenter.nordicsemi.com/index.jsp?topic=%2Fsdk_nrf5_v17.1.0%2Flib_fds_functionality.html)|
 |[FDS Usage Example](https://infocenter.nordicsemi.com/index.jsp?topic=%2Fsdk_nrf5_v17.1.0%2Flib_fds_usage.html)|
 
+# Pertinent sections in main.c
+- [test write fxn](https://github.com/droidecahedron/nrf-FDS/blob/7ada926bbf76e45c0ce3c525bd51221fc76593a3/main.c#L1046-L1070)
+- [read fxn](https://github.com/droidecahedron/nrf-FDS/blob/7ada926bbf76e45c0ce3c525bd51221fc76593a3/main.c#L1072-L1111)
+- [test sequence in main](https://github.com/droidecahedron/nrf-FDS/blob/7ada926bbf76e45c0ce3c525bd51221fc76593a3/main.c#L1175-L1185)
 
 
 ### Notes
