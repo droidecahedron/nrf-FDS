@@ -2,8 +2,7 @@
 example of using FDS in nRF for test read/write in an application
 (from SDK17.1 for nRF52840)
 
-## FDS documentation
-||
+|FDS documentation|
 |---|
 |[FDS Infocenter Main Page](https://infocenter.nordicsemi.com/index.jsp?topic=%2Fsdk_nrf5_v17.1.0%2Flib_fds.html&cp=9_1_3_16)|
 |[FDS Functionality](https://infocenter.nordicsemi.com/index.jsp?topic=%2Fsdk_nrf5_v17.1.0%2Flib_fds_functionality.html)|
