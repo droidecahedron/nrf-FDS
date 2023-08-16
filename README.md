@@ -21,6 +21,7 @@ example of using FDS in nRF for test read/write in an application
 ![image](https://github.com/droidecahedron/nrf-FDS/assets/63935881/12805487-bf19-49bb-bf3b-55a45caa022d)
 
 (from functionality section in infocenter... be mindful of which values are used for file IDs and record key values.)
+(Also, from the default, bump up number of pages reserved for FDS)
 
 ### Extra Wisdom:
 - The bootloader doesn't use the FDS itself because that would balloon the size too much.
