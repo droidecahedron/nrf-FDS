@@ -11,7 +11,8 @@ example of using FDS in nRF for test read/write in an application
 
 
 
-in sdk_config.h for bootloader, for lining up `NRF_DFU_APP_DATA_AREA_SIZE`, it must be a multiple of flash page size in bytes. Since  `FDS_VIRTUAL_PAGES=3`
-
-(1024 words / page) x (4 bytes/word) x (3 pages) = 12288
-If you were to change it to 2 for example, it would be 8192.
+### Note
+> in sdk_config.h for bootloader, for lining up `NRF_DFU_APP_DATA_AREA_SIZE`, it must be a multiple of flash page size in bytes. Since  `FDS_VIRTUAL_PAGES=3`
+> 
+> (1024 words / page) x (4 bytes/word) x (3 pages) = `12288`
+> If you were to change it to 2 for example, it would be `8192`.
